@@ -913,37 +913,37 @@ input, label, textarea {
 
 /*VERSION MOBILE */
 @media only screen and (max-width: 767px) {
-  h1 {
+  .contacto h1 {
     text-align: center;
   }
-  .formulario {
+  .contacto .formulario {
     padding-right: 1rem;
     padding-left: 1rem;
   }
-  .textarea {
+  .contacto .textarea {
     width: 70vw;
   }
 }
 
 /*VERSION TABLET*/
 @media only screen and (min-width: 768px) {
-  h1 {
+  .contacto h1 {
     text-align: center;
   }
-  .formulario {
+  .contacto .formulario {
     padding-left: 6rem;
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
   }
-  .textarea {
+  .contacto .textarea {
     width: 50vw;
     display: block;
   }
-  .contacto__comentarios .textarea__tablet {
+  .contacto .contacto__comentarios .textarea__tablet {
     display: block;
   }
-  .contacto__comentarios input {
+  .contacto .contacto__comentarios input {
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
@@ -952,25 +952,25 @@ input, label, textarea {
 
 /*VERSION ESCRITORIO*/
 @media only screen and (min-width: 1024px) {
-  h1 {
+  .contacto h1 {
     background-color: transparent;
     text-align: start;
     margin-left: 18rem;
   }
-  .textarea {
+  .contacto .textarea {
     width: 30vw;
     display: block;
   }
-  .formulario {
+  .contacto .formulario {
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
     padding-left: 20rem;
   }
-  .formulario input, .formulario select {
+  .contacto .formulario input, .contacto .formulario select {
     width: 20vw;
   }
-  .contacto__comentarios input {
+  .contacto .contacto__comentarios input {
     width: 13vw;
   }
 }
