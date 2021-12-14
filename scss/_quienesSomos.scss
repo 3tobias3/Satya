@@ -1,0 +1,162 @@
+ /*quienes somos ----------------------------------------------------------------------------------------------------------------*/
+ .quienesSomos{
+    background-size: 100%;
+    .quienesSomos__texto{
+        background-color: rgba(0, 0, 0, 0.515);
+        h2{
+            color: rgb(209, 141, 40);
+        }
+        p{
+            color: rgb(208, 208, 208);
+            font-weight: 500;
+            margin: 0rem 2rem 0rem 2rem;
+        }
+    }
+}
+
+.quienesSomos__yokoo{
+    background:linear-gradient(to left, black, rgb(31, 31, 31));
+    h2{
+        color: rgb(235, 143, 58);
+    }
+    h3{
+        color: rgb(209, 141, 40);
+        background:linear-gradient(to right, black, rgb(31, 31, 31));
+        text-align: center;
+    }
+    p{
+        color: rgb(208, 208, 208);
+        font-weight: 500;
+        margin: 0rem 2rem 0rem 2rem;
+    }
+}
+
+.quienesSomos__house{
+    h2{
+        color: rgb(209, 141, 40);
+        font-weight: 400;
+    }
+    iframe{
+        width: 15rem;
+        height: 15rem;
+        margin: 1rem 0rem 1rem 0rem;
+    }
+}
+/*VERSION MOBILE*/
+@media only screen and (max-width: 767px){
+    #grilla__desktop{
+        display: none;
+    }
+    .quienesSomos{
+        background-image: url(../images/i-am_nah--S4OsO0c6Ts-unsplash.jpg)!important;
+        background-size: 100%;
+        background-position-y: center;
+    }
+    .quienesSomos__house{
+        background:linear-gradient(to right, black, rgb(31, 31, 31));
+        h2{
+            color: rgb(209, 141, 40);
+        }
+        p{
+            color: rgb(208, 208, 208);
+            font-weight: 500;
+            margin: 0rem 2rem 0rem 2rem;
+        }
+    }
+}
+@media only screen and (max-width: 360px){
+    .quienesSomos{
+        background-size: 125%;
+    }
+}
+/*VERSION TABLET*/
+@media only screen and (min-width: 768px){
+    #grilla__desktop{
+        display: none;
+    }
+    main{
+        p{
+            font-size: larger;
+        }
+    }
+    .quienesSomos{
+        background-image: url(../images/i-am_nah--S4OsO0c6Ts-unsplash.jpg)!important;
+        background-size: 100%;
+        background-position-y:55%;
+    }
+    .quienesSomos__house{
+        background:linear-gradient(to right, black, rgb(31, 31, 31));
+        h2{
+            color: rgb(209, 141, 40);
+        }
+        p{
+            color: rgb(208, 208, 208);
+            font-weight: 500;
+            margin: 0rem 2rem;
+        }
+    }
+}
+/*VERSION DESKTOP*/
+@media only screen and (min-width: 1024px){
+    main{
+        background: linear-gradient(to bottom, black, rgb(33, 33, 33))
+    }
+    .texto-mobile{
+        display: none;
+    }
+    #arte{
+        grid-area: arte;
+        background-image: url(../images/i-am_nah--S4OsO0c6Ts-unsplash.jpg);
+        background-position-x: center;
+        background-position-y: center;
+        background-size: 100%;
+    }
+    #yokoo{
+        grid-area: yokoo;
+        background-image: url(../images/yokoobg.jpg);
+        background-position-x: 60%;
+        background-position-y: 35%;
+        background-color: black!important;
+    }
+    #sonido{
+        grid-area: sonido;
+        background-image: url(../images/nuestroSonido.jpg);
+        background-size: 150%;
+        background-position-y: bottom;
+    }
+    #contacto{
+        grid-area: contacto;
+        background-image: url(../images/contacto.jpg);
+    }
+    #grilla__desktop{
+        display: grid;
+        grid-template-areas: 
+        "arte yokoo"
+        "sonido contacto";
+        grid-template-columns: 50% 50%;
+        h2{
+            color: rgb(209, 141, 40);
+        }
+        p{
+            color: white;
+            font-weight: 500;
+        }
+        article{
+            margin: 1.5rem;
+            border-radius: 1.5rem;
+            padding: 2.5rem 0rem 2.5rem 0rem;
+            transform: scale(1,1);
+            transition: 0.5s;
+        }   
+        article:hover{
+            transform: scale(1.02,1.02);
+            transition: 0.5s;
+            box-shadow: 1px 1px 4px 2px rgba(209, 141, 40, 0.515);
+        } 
+        div{
+            padding: 1rem 3rem 1rem 3rem;
+            background: rgba(0, 0, 0, 0.494);
+        }
+    }
+}
+

@@ -1,0 +1,221 @@
+/*lanzamientos*/
+.lanzamientos{
+    background-color: black;
+
+    article{
+        background-color: rgba(0, 0, 0, 0.782);
+        border-radius: 3rem;
+        p{
+            color: rgb(213, 213, 213);
+            font-weight: 500;
+            text-align: center;
+            text-align:justify;
+        }
+        li{
+            color: rgb(216, 216, 216);
+            padding: 0.8rem 0rem;
+        }
+    }
+    h4{
+        font-weight: 700;
+    }
+}
+.lanzamientos__fondo--basics{
+    background-image: url(../images/satyabasics.jpg);
+    background-position: center;
+}
+.lanzamientos__fondo--lostdesert{
+    background-image: url(../images/shanti.jpg);
+    background-size: 150%;
+}
+.lanzamientos__fondo--atman{
+    background-image: url(../images/atman-background.jpg);
+    background-position: left;
+}
+.lanzamientos__boton{
+    background-color: rgba(209, 141, 40, 0.487);
+    transition: 0.8s;
+    border-radius: 0.7rem;
+}
+.lanzamientos__icons{
+    width: 0.9rem;
+    height: 1rem;
+}
+.lanzamientos__redes{
+    li{
+        padding: 0rem 0.5rem 0rem 0rem !important;
+    }
+    a{
+        color: rgb(192, 192, 192);
+        font-weight: 500;
+    }
+    a:hover{
+        text-decoration: none;
+    }
+}
+.lanzamientos__imagen{
+    width: 20rem;
+    height: 20rem;
+}
+/*formato tablet*/
+@media only screen and (min-width: 768px){
+    .card-mobile{
+        display: none!important;
+    }
+    .card-desktop{
+        display: none!important;
+    }
+    .card-tablet{
+        img{
+            box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.179);
+        }
+    }
+    .lanzamientos__redes{
+        li{
+            padding: 0rem 0rem 1rem 0rem !important;
+        }
+    }
+    .lanzamientos__fondo--lostdesert{
+        background-size: 100%;
+        background-position-y: center;
+    }
+    .lanzamientos__fondo--atman{
+        background-position-x: center;
+    }
+}
+/*formato mobile*/
+@media only screen and (max-width: 767px){
+    .card-tablet{
+        display: none!important;
+    }
+    .card-desktop{
+        display: none !important;
+    }
+    .card-mobile{
+        img{
+            box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.172);
+        }
+    }
+    .lanzamientos__fondo--lostdesert{
+        background-position-y: bottom;
+        background-position-x: left;
+        background-size: 180%;
+    }
+    .lanzamientos__fondo--atman{
+        background-image: url(../images/atman-background-alreves.jpg);
+        background-size: cover;
+        background-position-y: center;
+        background-position-x: right;     
+    }
+}
+@media only screen and (max-width: 379px){
+    .card-tablet{
+        display: none!important;
+    }
+    .card-desktop{
+        display: none !important;
+    }
+    .card-mobile{
+        ol{
+            a{
+                margin-left: 1.5rem !important;
+            }
+        }
+    }
+    .lanzamientos__fondo--lostdesert{
+        background-position-y: bottom;
+        background-position-x: left;
+        background-size: 180%;
+    }
+}
+@media only screen and (max-width: 359px){
+    .card-tablet{
+        display: none!important;
+    }
+    .card-desktop{
+        display: none !important;
+    }
+    .lanzamientos__fondo--lostdesert{
+        background-position-y: center;
+        background-position-x: center;
+        background-size: 200%;
+    }
+}
+/*formato pc*/
+@media only screen and (min-width: 1024px){
+    .card-mobile{
+        display: none !important;
+    }
+    .card-tablet{
+        display: none !important;
+    }
+    .card-desktop{
+        display:flex!important;
+    }
+    .lanzamientos{
+    article{
+            background-color: transparent!important;
+        }
+    }
+    .lanzamientos__fondo--basics{
+        background-position: top;
+        background-position-x: left;
+    }
+    .bg-transparente{
+        background-color: rgba(0, 0, 0, 0.741);
+        border-radius: 2rem;
+        box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.172) ;
+        p{
+            padding-left: 1.7rem;
+            padding-right: 1.7rem;
+        }
+        img{
+            box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.227);
+        }
+    }
+    .lanzamientos__imagen{
+        width: 15rem;
+        height: 15rem;
+    }
+    .desktop-font{
+        color: black;
+    }
+    .lanzamientos__boton:hover{
+        text-decoration: none;
+        transition: 0.7s;
+        background-color: rgb(209, 141, 40);
+        color:white;
+    }
+    .lanzamientos__redes{
+        background-color: rgba(0, 0, 0, 0.659);
+        border-radius: 2rem;
+        padding: 2rem;
+        transform: scale(1,1);
+        transition: 0.5s;
+        a{
+            color: rgb(208, 208, 208);
+        }
+        a:hover{
+            color: rgb(209, 141, 40);
+        }
+        h4{
+            color: rgb(206, 206, 206);
+            font-weight: 500;
+            border-bottom: 0.2px;
+            border-bottom-color: rgb(214, 214, 214);
+            border-bottom-style:groove;
+        }
+    }
+    .lanzamientos__redes:hover{
+        transform: scale(1.04,1.04);
+        transition: 0.5s;
+        box-shadow: 1px 1px 4px 2px rgba(209, 141, 40, 0.864);
+    }
+    .lanzamientos__fondo--atman{
+        background-position-y: top;
+        background-size: cover;
+    }
+    .lanzamientos__fondo--lostdesert{
+        background-position-y: top;
+    }
+}

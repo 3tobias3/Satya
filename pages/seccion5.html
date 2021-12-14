@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Déjanos saber tus opiniones">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../scss/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Open+Sans+Condensed:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro&display=swap" rel="stylesheet">  
+    <title>Contacto | ¡Comunicate con nosotros!</title>
+</head>
+<body>
+  <!--HEADER---------------------------------------------------------------->
+  <header class="bg-black border-bottom border-footer">
+    <div class="d-flex flex-row justify-content-between mb-3">
+    <a href="../index.html"> <img class="img-fluid logo" src="../images/Satya+Logo+Website.png" alt="logo"></a>
+    <!--Navbar-------------->
+    <nav class="navbar navbar-expand-lg navbar-light bg-black navbar-dn barra-navegacion">
+      <div class="container-fluid justify-content-end">
+          <ul class="navbar-nav">
+            <li class="nav-item ">
+              <a class="nav-link" aria-current="page" href="lanzamientosMF.html">lanzamientos</a>
+            </li>
+            <li class="nav-item px-4">
+              <a class="nav-link " href="eventosMF.html">eventos</a>
+            </li>
+            <li class="nav-item px-4">
+              <a class="nav-link" href="quienessomosMF.html">nosotros</a>
+            </li>
+            <li class="nav-item px-4">
+              <a class="nav-link active" href="seccion5.html">contacto</a>
+            </li>
+          </ul>
+      </div>
+    </nav>
+    <!--Burger Menu--------->
+    <nav class="navbar navbar-dark bg-black burger-dn">
+      <div class="container-fluid d-flex justify-content-end padding-burger">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+    </nav>
+    </div>
+    <div class="collapse" id="navbarToggleExternalContent">
+        <div class="bg-black p-2">
+            <ul class="nav flex-column align-items-end">
+                <li class="nav-item">
+                  <a class="nav-link text-burger" href="lanzamientosMF.html">lanzamientos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-burger" href="eventosMF.html">eventos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-burger" href="quienessomosMF.html">nosotros</a>
+                </li>
+                <li class="nav-item border-bottom">
+                  <a class="nav-link text-burger active" href="seccion5.html">contacto</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+  </header>
+<!--MAIN PAGE------------------------------------------------------------------>
+    <main class="contacto">
+      <!--FORMULARIO--------->
+      <h1 class=" pt-3 pb-2 mb-2">¡Contáctanos!</h1>
+      <div class="formulario">
+        <form class="d-flex flex-column" action="">
+            <input name="text" placeholder="Nombre" value="">
+            <input name="text"placeholder="Apellidos" value="">
+            <input name="text" placeholder="E-Mail" value="">
+            <select name="Sexo" id="">
+              <option value="starter" hidden> Sexo</option>
+              <option value="Masculino"> Masculino</option>
+              <option value="Femenino">Femenino </option> 
+              <option value="Otro">Otro </option>
+            </select>
+            <div class="contacto__checkbox mb-3">
+            <label for="checkbox"> Quiero recibir información acerca de próximos lanzamientos y eventos. <input class="m-0" type="checkbox" name="acepta" value="1"></label> 
+            </div>
+            <div class="contacto__comentarios">
+              <textarea class="textarea" name="comentarios" cols="30" rows="7" placeholder="Deje sus comentarios..."></textarea>
+              <input type="reset" value="Limpiar formulario">
+              <input type="submit" value="Enviar">
+            </div>
+        </form>
+      </div>
+    </main>
+<!--FOOTER------------------------------------------------------->
+    <footer class="border-top footer__borde">
+      <ul class="footer__redes">
+        <li><a href="https://www.instagram.com/satyarecs/"> <img class="footer__icons"  src="../images/instagram.png" alt="instagram" ></a></li>
+        <li><a href="https://soundcloud.com/satyarecs"> <img class="footer__icons" src="../images/soundcloud.png" alt="soundcloud" ></a></li>
+        <li><a href="https://www.facebook.com/Satyarecs/"> <img class="footer__icons" src="../images/facebook.png" alt="facebook" ></a></li>
+      </ul>
+      <div class="footer__texto">
+        <p class="fs-7 p-1">demos:satyademos@gmail.com</p>    
+      </div>
+    </footer>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body> 
+</html>

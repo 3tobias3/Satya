@@ -1,0 +1,134 @@
+/*contacto-------------------------------------------------------------------------*/
+.contacto{
+    textarea{
+        border-radius: 0.5rem;
+    }
+} 
+h1{
+        color: rgb(209, 141, 40)!important;
+        background-color: rgba(0, 0, 0, 0.405);
+    } 
+input , label , textarea{
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.formulario{
+    input{
+        width: 75vw;
+        margin-bottom: 2rem;
+        background-color: rgba(0, 0, 0, 0.309);
+        border-radius: 1rem;
+        border-color: rgb(162, 162, 162);
+        border-style: groove;
+        padding: 0rem 1rem;
+        color: white;
+    }
+    input::placeholder{
+        color: rgb(169, 169, 169);
+    }
+    input:focus{
+        color: white;
+    }
+    select{
+        background-color: rgba(0, 0, 0, 0.309);
+        border-radius: 1rem;
+        color: white;
+        padding: 0rem 1rem;
+        margin-bottom: 2rem;
+        width: 30vw;
+    }
+    label{
+        color: white;
+    }
+    .contacto__checkbox{
+        label{
+            font-size:smaller;
+        }
+        input{
+            width: min-content;
+        }
+    }
+    textarea{
+        background-color: rgba(0, 0, 0, 0.371);
+        color: white;
+        padding: 0rem 1rem;
+    }
+    textarea:focus{
+        color: white;
+    }
+    .contacto__comentarios{
+        textarea{
+            margin-bottom: 1rem;
+        }
+        input{
+            margin-bottom: 1rem;
+            transition: 0.5s;
+        }
+        input:hover{
+            background-color: rgb(209, 141, 40);
+            transition: 0.5s;
+        }
+    }    
+}
+/*VERSION MOBILE */
+@media only screen and (max-width: 767px ){
+    h1{
+        text-align: center;
+    }
+    .formulario{
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
+    .textarea{
+        width: 70vw;
+    }
+}
+/*VERSION TABLET*/
+@media only screen and (min-width: 768px ){
+    h1{
+        text-align: center;
+    }
+    .formulario{
+        padding-left: 6rem;
+        width: fit-content;
+    }
+    .textarea{
+        width: 50vw;
+        display: block;
+    }
+
+    .contacto__comentarios{
+        .textarea__tablet{
+            display: block;
+        }
+        input{
+            width:fit-content;
+        }
+    }
+}
+
+/*VERSION ESCRITORIO*/
+@media only screen and (min-width: 1024px){ 
+    h1{
+        background-color: transparent;
+        text-align: start;
+        margin-left: 18rem;
+    }
+    .textarea{
+        width: 30vw;
+        display: block;
+    }
+    .formulario{
+        width: fit-content;
+        padding-left: 20rem;
+        input , select{
+            width: 20vw;
+        }
+    }
+    .contacto__comentarios{
+        input{
+            width: 13vw;
+        }
+    }
+   
+}

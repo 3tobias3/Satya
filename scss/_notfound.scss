@@ -1,0 +1,27 @@
+.notFound{
+    background-color: rgb(31, 31, 31);
+    .notFound__texto{
+        a{
+            color: black;
+            font-weight:bold;
+            border-radius: 0.5rem;
+        }
+        a:hover{
+            transform: scale(1.05,1.05);
+            text-decoration: none;
+        }
+        p{
+            color: rgb(204, 204, 204);
+            font-family:  'Source Serif Pro', cursive;
+            font-weight: 500;
+        }
+    }
+    .notFound__boton{
+        background-color: rgb(209, 141, 40);
+    }
+    footer{
+        position:absolute;
+        bottom: 0%;
+        width: 100vw;
+    }
+}

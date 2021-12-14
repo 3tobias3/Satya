@@ -1,0 +1,78 @@
+/* home-----------------------------------------------------------------------*/
+.carrusel-flex{
+    display: flex;
+    flex-direction: column;
+}
+.carrusel-text{
+    font-family: 'Source Serif Pro', cursive;
+    color: black;
+    padding-top: 1rem;
+}
+.b-radius{
+    border-radius: 2rem;
+}
+.mainHome{
+    background-color: black;
+}
+@media only screen and (min-width: 1024px){
+    .titulo-home{
+        text-align: center;
+        padding: 1.5rem 0rem;
+    }
+    .carrusel-flex{
+        display: flex;
+        flex-direction: row;
+        padding: 0rem 7rem 0rem 7rem;
+    }
+    .text-home{
+        display: none;
+    }
+    div.carousel{
+        width: 50%;
+    }
+    .carrusel-text{
+        font-weight: 500;
+    }
+    .mainHome{
+        background: linear-gradient(to bottom, black, rgb(33, 33, 33))
+    }
+    .enlaces-home{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 0rem 5rem 3rem 5rem;
+        h2{
+            color: white
+        }
+        h2:hover{
+            color: rgb(209, 141, 40);
+        }
+        a{
+            transform: scale(1,1);
+            transition: 0.3s;
+        }
+        a:hover{
+            text-decoration: none;
+            transform:scale(1.05,1.05);
+            transition: 0.3s;
+        }
+    }
+    .burger-dn{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1023px){
+    .enlaces-home{
+        display: none;
+    }
+    .titulo-home{
+        display: none;
+    }
+    .padding-burger{
+        padding-right: 1rem;
+    }
+    .navbar-dn{
+        display: none;
+    }
+}

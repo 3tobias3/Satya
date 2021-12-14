@@ -1,0 +1,28 @@
+footer{
+    background-color: black;
+
+    ul{
+        margin: 0px;
+        padding: 1rem;
+    }
+    .footer__icons{
+        width: 2rem;
+        height: 2rem;
+        padding: 5px 0px;
+    }
+    .footer__redes{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding-top: 2rem;
+        padding-bottom: 20px;
+    }
+    .footer__texto{
+        color: rgb(189, 189, 189);
+        display: inline;
+        text-align: center;
+    }
+    .footer__borde{
+        border-color: rgb(53, 53, 53)!important;
+    }
+}

@@ -1,0 +1,301 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: content-box;
+}
+h2{
+    color: rgb(189, 189, 189);
+    font-family:  'Source Serif Pro', cursive;
+    padding: 0rem 1.5rem;
+    margin-bottom: 0px;
+}
+li{
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: 300;
+    display: inline-block;
+    position: relative;
+    padding-left: 10px;
+    padding-right: 20px;
+}
+a{
+    text-decoration: none;
+    color:white;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+a:hover{
+    text-decoration:underline;
+
+}
+p{
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: 600; 
+    margin: 0px;  
+}
+form{
+    padding: 30px;
+}
+.titulos{
+    font-family:'Source Serif Pro', serif;
+    font-size:x-large;
+    font-weight:bold;
+    grid-area: p;
+}
+.textoDerecha{
+    text-align: right;
+}
+.displayBlock{
+    display: block;
+}
+/*footer---------------------------------------------------------*/
+footer{
+    background-color: black;
+}
+footer ul{
+    margin: 0px;
+    padding: 1rem;
+}
+.redesFooter{
+    width: 2rem;
+    height: 2rem;
+    padding: 5px 0px;
+}
+ .listaFooter{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-top: 2rem;
+    padding-bottom: 20px;
+ }
+ .textFooter{
+    color: rgb(189, 189, 189);
+    display: inline;
+    text-align: center;
+ }
+ .border-footer{
+    border-color: rgb(53, 53, 53)!important;
+ }
+/*header y navbar-------------------------------------------------------*/
+header{
+    background-color: black;
+    position: sticky;
+    top: 0px;
+    bottom: 0px;
+    z-index: 10000;
+    grid-area: header;
+}
+
+li.nav-item{
+    padding: 0px;
+}
+
+a.nav-link:hover{
+    color: white;
+}
+ul.nav li{
+    border-radius: 10px;
+}
+ul.nav li:hover{
+    background-color: rgba(169, 82, 16, 0.323);
+}
+ul.nav li a:hover{
+    text-decoration: none;
+}
+.logo{
+    max-width: 100%;
+    height: 6rem;
+}
+.text-burger{
+    font-size:xx-large;
+    font-weight:600;
+    color: rgb(189, 189, 189);
+}
+.padding-burger{
+    padding-right: 3rem;
+}
+
+ /* home-----------------------------------------------------------------------*/
+.carrusel-flex{
+    display: flex;
+    flex-direction: column;
+}
+.carrusel-text{
+    font-family: 'Source Serif Pro', cursive;
+    color: black;
+    padding-top: 1rem;
+}
+.b-radius{
+    border-radius: 2rem;
+}
+.mainHome{
+    background-color: black;
+}
+@media only screen and (min-width: 1024px){
+    .titulo-home{
+        text-align: center;
+        padding: 1.5rem 0rem;
+
+    }
+    .carrusel-flex{
+        display: flex;
+        flex-direction: row;
+        padding: 0rem 7rem 0rem 7rem;
+    }
+    .text-home{
+        display: none;
+    }
+    div.carousel{
+        width: 50%;
+    }
+    .carrusel-text{
+        font-weight: 500;
+    }
+    .mainHome{
+        background-color: rgb(22, 22, 22 );
+    }
+    .enlaces-home{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 0rem 5rem 3rem 5rem;
+    }
+    .hover-enlace:hover{
+        background-color: rgba(169, 82, 16, 0.323);
+        border-radius: 2rem;
+        text-decoration: none;
+        transform:scale(1.2,1.2);
+    }
+}
+@media only screen and (max-width: 1023px){
+    .enlaces-home{
+        display: none;
+    }
+    .titulo-home{
+        display: none;
+    }
+    .padding-burger{
+        padding-right: 1rem;
+    }
+
+}
+
+ /*lanzamientos-------------------------------------------------------------------------------*/
+ .colorLanzamientos{
+     background-color: black;
+ }
+ .descripcionLanzamiento{
+    padding: 10px;
+    margin: 20px;
+    width: 200px;
+    display: inline-block;
+    border-color: rgba(255, 255, 255, 0.693);
+    border-width: 5px;
+    border-style: solid;
+    border-radius: 10px;
+    background-color: black;
+ }
+ .lanzamiento{
+    display: inline-block;
+    position: absolute;
+    padding-top: 30px;
+ }
+ .tracks{
+    display: block;
+    list-style: decimal;
+    padding: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 400;
+ }
+ .audioControl{
+    width: 300px;
+    height: 30px;
+    padding-left: 10px;
+ }
+ .enlacesTracks{
+    display:inline;
+    padding: 30px;
+ }
+ /*eventos------------------------------------------------------------------------------------------------------*/
+ .mainEventos{
+     display: flex;
+     flex-direction: row;
+ }
+ .eventos{
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+    margin: 0px 0px 15px 15px;
+    justify-content: space-evenly;
+    height: 900px;
+ }
+ .eventoArea{
+    display: flex;
+    flex-direction: row;
+    border-width: 5px;
+    border-color: black;
+    border-style: groove;
+    border-radius: 10px;
+    padding: 3px; 
+    background-color: rgba(208, 137, 91, 0.583); 
+    }
+ .infoEventos{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 150px;
+    margin-left: 10px;
+ }
+ .eventoArea:hover{
+    transform: scale(1.02,1.02);
+ }
+ .videosEventos{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content:space-between;
+    height: 400px;
+    align-items:center;
+    margin-left: 20%;
+    margin-top: 20px;
+    border-width: 5px;
+    border-color: black;
+    border-style: double;
+    background-color: black;
+    overflow:auto;
+ }
+ /*quienes somos ----------------------------------------------------------------------------------------------------------------*/
+ 
+ .imagenFondo{
+    background-image: url(https://images.squarespace-cdn.com/content/v1/603e374ebda34a2e824bb846/1614779691067-G2UJC83S2LTX49GIED27/SATYA001_DGTL.jpg?format=1000w);
+    background-size: 100%;
+    background-position-y: center;
+}
+ .textoQuienesSomos{
+    padding: 20px;
+    display: inline-block;
+    width: 600px;
+ }
+ .textoQuienesSomos p{
+     padding-bottom: 12px;
+ }
+ .videosQuienesSomos{
+    display: block;
+    padding: 20px;
+    border-color:black;
+    border-width: 5px;
+    border-style: solid;
+    border-radius: 20px;
+    background-color: rgba(226, 143, 104, 0.583); 
+    margin: 10px;
+ }
+
+ .iframesQuienesSomos{
+    display: inline;
+    padding: 10px;
+    margin: 0px 10px;
+    width: 330px;
+    height: 220px;
+ }
+ .videos{
+    padding-left: 30px;
+ }
+ 
