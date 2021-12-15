@@ -76,3 +76,9 @@
         display: none;
     }
 }
+
+@media only screen and (min-height: 900px){
+    .mainHome{
+        padding-bottom: 3rem;
+    }
+}

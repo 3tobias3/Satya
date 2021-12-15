@@ -202,6 +202,12 @@ header .active {
   }
 }
 
+@media only screen and (min-height: 900px) {
+  .mainHome {
+    padding-bottom: 3rem;
+  }
+}
+
 /*lanzamientos*/
 .lanzamientos {
   background-color: black;
@@ -447,7 +453,7 @@ header .active {
 }
 
 .eventos h1 {
-  background-color: rgba(0, 0, 0, 0.686);
+  background-color: rgba(0, 0, 0, 0.604);
   color: #d18d28;
 }
 
@@ -950,7 +956,7 @@ input, label, textarea {
   }
 }
 
-/*VERSION ESCRITORIOO*/
+/*VERSION ESCRITORIO*/
 @media only screen and (min-width: 1024px) {
   .contacto h1 {
     background-color: transparent;
@@ -972,6 +978,20 @@ input, label, textarea {
   }
   .contacto .contacto__comentarios input {
     width: 13vw;
+  }
+  .contacto .contacto__checkbox input {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+}
+
+@media only screen and (min-height: 900px) {
+  footer {
+    padding: 3rem 0rem;
+  }
+  .contacto {
+    padding: 6rem 0rem 8rem 0rem;
   }
 }
 
