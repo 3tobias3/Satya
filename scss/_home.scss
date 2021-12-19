@@ -82,3 +82,11 @@
         padding-bottom: 3rem;
     }
 }
+@media only screen and (max-width: 435px){
+    .carousel-control-next{
+        display: none!important;
+    }
+    .carousel-control-prev{
+        display: none!important;
+    }
+}

@@ -30,12 +30,24 @@ footer .footer__redes {
 
 footer .footer__texto {
   color: #bdbdbd;
-  display: inline;
-  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 footer .footer__borde {
   border-color: #353535 !important;
+}
+
+footer .fs-copyright {
+  font-size: 0.8rem;
 }
 
 header {
@@ -205,6 +217,15 @@ header .active {
 @media only screen and (min-height: 900px) {
   .mainHome {
     padding-bottom: 3rem;
+  }
+}
+
+@media only screen and (max-width: 435px) {
+  .carousel-control-next {
+    display: none !important;
+  }
+  .carousel-control-prev {
+    display: none !important;
   }
 }
 
@@ -777,8 +798,8 @@ header .active {
     -ms-grid-column: 1;
     grid-area: sonido;
     background-image: url(../images/nuestroSonido.jpg);
-    background-size: 150%;
-    background-position-y: bottom;
+    background-size: cover;
+    background-position-y: center;
   }
   #contacto {
     -ms-grid-row: 2;
@@ -987,9 +1008,6 @@ input, label, textarea {
 }
 
 @media only screen and (min-height: 900px) {
-  footer {
-    padding: 3rem 0rem;
-  }
   .contacto {
     padding: 6rem 0rem 8rem 0rem;
   }
