@@ -83,10 +83,12 @@
     }
 }
 @media only screen and (max-width: 435px){
-    .carousel-control-next{
-        display: none!important;
-    }
-    .carousel-control-prev{
-        display: none!important;
+    .mainHome{
+        .carousel-control-next{
+            display: none!important;
+        }
+        .carousel-control-prev{
+            display: none!important;
+        }
     }
 }
